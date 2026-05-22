@@ -1,0 +1,21 @@
+[package]
+name = "omni-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+description = "Core engine for Omni IDE: rope-based text buffers, tabs, and file management"
+
+[dependencies]
+ropey = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+indexmap = "2.2"
+
+[dev-dependencies]
+tokio-test = "0.4"
