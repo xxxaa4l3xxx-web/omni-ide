@@ -1,0 +1,18 @@
+[workspace]
+members = ["omni-core", "omni-syntax", "omni-lsp", "omni-app"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["A4l3x <xxxaa4l3xxx@gmail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/xxxaa4l3xxx-web/omni-ide"
+
+[workspace.dependencies]
+ropey = "1.6"
+tokio = { version = "1.37", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tracing = "0.1"

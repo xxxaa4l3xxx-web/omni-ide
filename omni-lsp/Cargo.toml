@@ -1,0 +1,22 @@
+[package]
+name = "omni-lsp"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+description = "Language Server Protocol client for Omni IDE"
+
+[dependencies]
+tower-lsp = "0.20"
+lsp-types = "0.95"
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+omni-core = { path = "../omni-core" }
+
+[dev-dependencies]
+tokio-test = "0.4"
