@@ -1,0 +1,21 @@
+[package]
+name = "omni-syntax"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+description = "Universal syntax highlighting engine for Omni IDE using Tree-sitter"
+
+[dependencies]
+tree-sitter = "0.22"
+tree-sitter-rust = "0.21"
+tree-sitter-javascript = "0.21"
+tree-sitter-python = "0.21"
+thiserror = { workspace = true }
+tracing = { workspace = true }
+ropey = { workspace = true }
+omni-core = { path = "../omni-core" }
+
+[dev-dependencies]
